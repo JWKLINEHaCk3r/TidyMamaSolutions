@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tidy Mama Solutions</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+  <header>
+    <img src="assets/logo.png" alt="Tidy Mama Solutions Logo" class="logo" />
+    <h1>Tidy Mama Solutions</h1>
+    <p class="tagline">Where Chaos Meets Calm</p>
+  </header>
+
+  <section class="promo">
+    <p><strong>🎉 $20 OFF First Visit!</strong></p>
+  </section>
+
+  <section class="services">
+    <h2>Home Cleaning & Organization Services</h2>
+    <ul>
+      <li>✅ Deep Cleaning (One-time or recurring)</li>
+      <li>✅ Closet, Kitchen & Pantry Makeovers</li>
+      <li>✅ Toy Rooms, Garages & Home Office Setup</li>
+      <li>✅ Decluttering Help + Donation Drop-Off</li>
+      <li>✅ Move-In/Out Cleaning Available</li>
+    </ul>
+  </section>
+
+  <section class="about">
+    <h2>Why Choose Us?</h2>
+    <ul>
+      <li>👩‍👧 Mom-Run</li>
+      <li>🧼 Kid-Safe & Eco-Friendly Products</li>
+      <li>🧠 Personalized Organization Systems That Actually Work</li>
+      <li>❤️ 100% Judgment-Free Guarantee</li>
+    </ul>
+  </section>
+
+  <section class="testimonial">
+    <blockquote>“She didn’t just clean—she transformed my home.”</blockquote>
+    <cite>– Happy Client</cite>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>📱 Call/Text: <a href="tel:3864572188">(386) 457-2188</a></p>
+    <p>📧 Email: <a href="mailto:tidymamasolutionsllc@gmail.com">tidymamasolutionsllc@gmail.com</a></p>
+    <p>📍 Serving Florida</p>
+    <p>📷 Instagram: <a href="https://instagram.com/TidyMamaSolutions" target="_blank">@TidyMamaSolutions</a></p>
+  </section>
+
+  <section class="form">
+    <h2>Book a Free Consultation</h2>
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="contact" />
+      <p style="display:none">
+        <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+      </p>
+      <label>Full Name:<br /><input type="text" name="name" required /></label><br />
+      <label>Email Address:<br /><input type="email" name="email" required /></label><br />
+      <label>Phone Number:<br /><input type="tel" name="phone" /></label><br />
+      <label>Service Needed:<br />
+        <select name="service" required>
+          <option value="Deep Cleaning">Deep Cleaning</option>
+          <option value="Organization">Organization</option>
+          <option value="Move-In/Out">Move-In/Out</option>
+          <option value="Custom Consultation">Custom Consultation</option>
+        </select>
+      </label><br />
+      <label>Message:<br /><textarea name="message" rows="5" required></textarea></label><br />
+      <button type="submit">Request Booking</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Tidy Mama Solutions – All rights reserved.</p>
+  </footer>
+</body>
+</html>
