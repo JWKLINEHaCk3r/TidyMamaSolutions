@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tidy Mama Solutions | Where Chaos Meets Calm</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #fffaf7, #f0f4ff);
+      color: #333;
+      line-height: 1.6;
+    }
+    a { color: #f06d61; text-decoration: none; }
+    header {
+      display: flex;
+      align-items: center;
+      padding: 2rem 1rem;
+      background: #ffffffcc;
+      backdrop-filter: blur(4px);
+      border-bottom: 4px solid #f06d61;
+    }
+    .logo {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      margin-right: 1rem;
+    }
+    .header-title h1 {
+      font-size: 2.5rem;
+      color: #1a2f6f;
+      margin: 0;
+    }
+    .tagline {
+      font-style: italic;
+      color: #777;
+      font-size: 1.1rem;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+      padding: 5rem 2rem;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.4);
+    }
+    .hero h2, .hero p {
+      position: relative;
+      z-index: 1;
+    }
+    .hero h2 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    audio {
+      position: fixed;
+      bottom: 1rem;
+      right: 1rem;
+      z-index: 1000;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="INSERT-YOUR-LOGO-URL-HERE.png" alt="Tidy Mama Logo" class="logo" />
+    <div class="header-title">
+      <h1>Tidy Mama Solutions</h1>
+      <p class="tagline">Where Chaos Meets Calm</p>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h2>Mom-Powered Cleaning & Organizing That Feels Like a Vacation</h2>
+    <p>Transform your space—and your peace of mind—with our tailored home and office services across Florida.</p>
+  </section>
+
+  <!-- Autoplay Background Music -->
+  <audio controls autoplay loop>
+    <source src="https://example.com/ambient-coastal.mp3" type="audio/mp3" />
+    Your browser does not support the audio element.
+  </audio>
+  <!-- Services Grid -->
+  <section class="section" style="background:#ffffffee; padding:4rem 1rem;">
+    <h2 style="text-align:center; font-size:2rem; color:#1a2f6f; margin-bottom:2rem;">Our Signature Services</h2>
+    <div style="display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));">
+      <div class="card">
+        <h3>Deep Cleaning</h3>
+        <ul>
+          <li>One-time or subscription</li>
+          <li>Kid-safe, beach-inspired products</li>
+          <li>Seasonal refresh packages</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Home Organization</h3>
+        <ul>
+          <li>Closet, pantry, playroom resets</li>
+          <li>Energy-based “Mom Mode” tiers</li>
+          <li>Custom storage systems</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Decluttering Support</h3>
+        <ul>
+          <li>Donation pickups</li>
+          <li>Minimalist family coaching</li>
+          <li>Monthly “Declutter Club” option</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>After-Hours Office Cleaning</h3>
+        <ul>
+          <li>Discrete evening service</li>
+          <li>Custom consultation-based pricing</li>
+          <li>Paper-safe & scent-safe options</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Subscription Pricing -->
+  <section class="section" style="background: linear-gradient(to bottom, #e4f1ff, #f6f8ff); padding: 4rem 1rem;">
+    <h2 style="text-align:center; font-size:2rem; color:#1a2f6f; margin-bottom:2rem;">✨ Subscription Packages for Every Mom</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+      <div class="plan-card">
+        <h3>The Light Breeze</h3>
+        <p class="price">$99/mo</p>
+        <p>1 tidy + refresh per month</p>
+      </div>
+      <div class="plan-card" style="border: 3px solid #f06d61;">
+        <h3>Sunset Serenity</h3>
+        <p class="price">$189/mo</p>
+        <p>Bi-weekly clean + monthly organize</p>
+      </div>
+      <div class="plan-card">
+        <h3>Beach House Bliss</h3>
+        <p class="price">$349/mo</p>
+        <p>Weekly clean, monthly reset + VIP priority</p>
+      </div>
+    </div>
+  </section>
+  <!-- Before & After Gallery -->
+  <section class="section" style="padding:4rem 1rem; background:#fffaf7;">
+    <h2 style="text-align:center; font-size:2rem; color:#1a2f6f; margin-bottom:2rem;">Real Mom Wins 💪</h2>
+    <div class="gallery-grid">
+      <img src="https://via.placeholder.com/500x300?text=Before+Pantry" alt="Before Pantry" />
+      <img src="https://via.placeholder.com/500x300?text=After+Pantry" alt="After Pantry" />
+      <img src="https://via.placeholder.com/500x300?text=Before+Playroom" alt="Before Playroom" />
+      <img src="https://via.placeholder.com/500x300?text=After+Playroom" alt="After Playroom" />
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section" style="background:#f2faff; padding:3rem 1rem;">
+    <h2 style="text-align:center; color:#1a2f6f; margin-bottom:2rem;">What Moms Are Saying</h2>
+    <div class="testimonial">
+      “Not just organized—**recharged.** I finally feel like myself again in my own home.”
+      <cite>– Sarah B., mom of three</cite>
+    </div>
+    <br />
+    <div class="testimonial">
+      “Tidy Mama made my whole week better. The systems actually work. Game changer.”
+      <cite>– Alyssa C., remote worker & mom</cite>
+    </div>
+  </section>
+
+  <!-- Booking / Calendar -->
+  <section class="section" style="background:#ffffff; padding:3rem 1rem;">
+    <h2 style="text-align:center; color:#1a2f6f; margin-bottom:2rem;">📅 Book a Discovery Call</h2>
+    <p style="text-align:center; max-width:600px; margin:0 auto 2rem; color:#555;">
+      Ready to reclaim your calm? Choose a time that works best for you below:
+    </p>
+
+    <!-- Google Calendar Embed Placeholder -->
+    <div style="text-align:center;">
+      <iframe src="https://calendar.google.com/calendar/embed?src=your_calendar_public_url_here&ctz=America%2FNew_York"
+        style="border: 1px solid #ccc; width: 100%; max-width: 800px; height: 600px;" 
+        frameborder="0" scrolling="no">
+      </iframe>
+    </div>
+  </section>
+  <!-- Contact -->
+  <section class="section" style="background:#f7faff; padding:3rem 1rem;">
+    <h2 style="text-align:center; color:#1a2f6f; margin-bottom:2rem;">📞 Get In Touch</h2>
+    <form name="contact" method="POST" data-netlify="true" style="max-width:600px; margin:0 auto;">
+      <input type="hidden" name="form-name" value="contact" />
+      <label>Full Name</label>
+      <input type="text" name="name" required />
+
+      <label>Email</label>
+      <input type="email" name="email" required />
+
+      <label>Phone</label>
+      <input type="tel" name="phone" />
+
+      <label>What are you looking for?</label>
+      <select name="service">
+        <option value="home">Home Reset</option>
+        <option value="office">Office Cleaning</option>
+        <option value="subscription">Ongoing Support</option>
+      </select>
+
+      <label>Message</label>
+      <textarea name="message" rows="5"></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Tidy Mama Solutions · All Rights Reserved</p>
+    <p>Serving Florida's east coast & beyond · <a href="mailto:tidymamasolutionsllc@gmail.com">Email Us</a></p>
+    <p>Follow on <a href="https://instagram.com/TidyMamaSolutions" target="_blank">Instagram @TidyMamaSolutions</a></p>
+  </footer>
+
+</body>
+</html>
