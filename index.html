@@ -4,88 +4,190 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tidy Mama Solutions</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
   <style>
-    body { margin:0; font-family:'Poppins',sans-serif; background:#f0f4f8; color:#333; scroll-behavior:smooth; }
-    header{background:linear-gradient(90deg,#89f7fe,#66a6ff);padding:3rem 1rem;text-align:center;color:#fff;}
-    header .logo{width:140px;border-radius:50%;margin-bottom:1rem;border:3px solid #fff;}
-    h1{margin:0;font-size:2.8rem;} .tagline{font-style:italic;color:#eef;}
-    .promo{background:#ff9a9e;color:#fff;padding:1rem;border-radius:8px;text-align:center;font-weight:600;margin:2rem;}
-    section{max-width:1000px;margin:2rem auto;padding:2rem;background:#fff;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,0.1);}
-    .services ul{display:grid;gap:1rem;list-style:none;padding:0;}
-    .services li::before{content:"✅ ";color:#66a6ff;}
-    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;}
-    .gallery img{width:100%;border-radius:8px;object-fit:cover;box-shadow:0 4px 10px rgba(0,0,0,0.1);}
-    .testimonial{font-style:italic;background:#ffecd2;border-left:4px solid #ff9a9e;padding:1rem;border-radius:8px;}
-    .form label{display:block;font-weight:600;margin:1rem 0 0.3rem;}
-    .form input,.form select,.form textarea{width:100%;padding:0.6rem;border:1px solid #ccc;border-radius:6px;}
-    .form button{background:#66a6ff;color:#fff;padding:0.8rem 1.5rem;font-size:1rem;border:none;border-radius:6px;cursor:pointer;}
-    .form button:hover{background:#558ecc;}
-    .calendar iframe{width:100%;height:600px;border:none;border-radius:8px;}
-    footer{background:#66a6ff;color:#fff;text-align:center;padding:1rem;margin-top:2rem;}
+    * {
+      box-sizing: border-box;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('https://images.unsplash.com/photo-1505692794403-35c9af7bff19?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: rgba(255, 255, 255, 0.85);
+      color: #444;
+      text-align: center;
+      padding: 3rem 1rem;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+    header .logo {
+      width: 140px;
+      height: auto;
+      margin-bottom: 1rem;
+      border-radius: 50%;
+      border: 4px solid #fff;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    .tagline {
+      font-style: italic;
+      color: #666;
+    }
+    section {
+      margin: 2rem auto;
+      padding: 2.5rem;
+      max-width: 1100px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.95);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+      animation: fadeIn 0.8s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .promo {
+      background: linear-gradient(135deg, #2196f3, #21cbf3);
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      font-weight: bold;
+      font-size: 1.6rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    ul {
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 0.75rem;
+    }
+    li::before {
+      content: "🧹 ";
+      color: #21cbf3;
+    }
+    .testimonial {
+      font-style: italic;
+      background: #e3f2fd;
+      border-left: 5px solid #2196f3;
+      padding: 1rem;
+      margin-top: 1rem;
+      border-radius: 10px;
+    }
+    .form input,
+    .form textarea,
+    .form select {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 1rem;
+    }
+    .form button {
+      background-color: #2196f3;
+      color: white;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .form button:hover {
+      background-color: #1976d2;
+    }
+    .calendar {
+      border: 2px dashed #2196f3;
+      padding: 1rem;
+      margin-top: 1rem;
+      background-color: #e3f2fd;
+      border-radius: 12px;
+    }
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+      border-radius: 10px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: rgba(33, 150, 243, 0.9);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 1rem;
+      margin-top: 2rem;
+    }
   </style>
 </head>
 <body>
+  <header>
+    <img src="/mnt/data/b96afcdf-3abf-4938-b6d5-166324431297.png" alt="Tidy Mama Solutions Logo" class="logo">
+    <h1>Tidy Mama Solutions</h1>
+    <p class="tagline">Where Chaos Meets Calm</p>
+  </header>
 
-<header>
-  <img src="assets/logo.png" alt="Tidy Mama Logo" class="logo">
-  <h1>Tidy Mama Solutions</h1>
-  <p class="tagline">Where Chaos Meets Calm</p>
-</header>
+  <section class="promo">$20 OFF Your First Cleaning – Book Now!</section>
 
-<div class="promo">🎉 First-time clients get $20 OFF!</div>
+  <section>
+    <h2>Our Services</h2>
+    <ul>
+      <li>Deep Cleaning</li>
+      <li>Closet, Pantry, & Kitchen Organization</li>
+      <li>Garage & Playroom Transformation</li>
+      <li>Move-In/Move-Out Cleaning</li>
+      <li>Decluttering + Donation Drop-Off</li>
+    </ul>
+  </section>
 
-<section class="services">
-  <h2>Our Happy-Home Services</h2>
-  <ul>
-    <li>Deep Cleaning – one-time or recurring</li>
-    <li>Closet, Pantry & Kitchen Makeovers</li>
-    <li>Toy Room, Garage & Home Office Setup</li>
-    <li>Decluttering + Donation Drop-Off</li>
-    <li>Move-In/Out Clean & Reset</li>
-  </ul>
-</section>
+  <section class="gallery">
+    <img src="https://images.unsplash.com/photo-1598300053650-ebbdf11c8b44?auto=format&fit=crop&w=800&q=80" alt="Before Cleaning">
+    <img src="https://images.unsplash.com/photo-1595526114035-43b6c9b9e4ae?auto=format&fit=crop&w=800&q=80" alt="After Cleaning">
+    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Organized Pantry">
+  </section>
 
-<section>
-  <h2>Before & After: See the Difference</h2>
-  <div class="gallery">
-    <img src="turn0image0" alt="Before - cluttered room">
-    <img src="turn0image1" alt="After - organized room">
-    <img src="turn0image8" alt="Before - messy kitchen">
-    <img src="turn0image10" alt="After - clean, bright kitchen">
-  </div>
-</section>
+  <section class="testimonial">
+    “She didn’t just clean—she transformed my home into a sanctuary.” — Happy Client
+  </section>
 
-<section class="testimonial">
-  “Tidy Mama didn’t just organize my house—she restored my peace. My kids’ rooms have never looked better!”<br>
-  <cite>– Happy Mom</cite>
-</section>
+  <section>
+    <h2>Book a Consultation</h2>
+    <form class="form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <input type="tel" placeholder="Phone Number" required />
+      <textarea placeholder="Tell us what you need..." required></textarea>
+      <button type="submit">Request Booking</button>
+    </form>
+  </section>
 
-<section class="form">
-  <h2>Book Your Free Consultation</h2>
-  <form name="contact" method="POST" data-netlify="true">
-    <input type="hidden" name="form-name" value="contact">
-    <label>Full Name:<input type="text" name="name" required></label>
-    <label>Email:<input type="email" name="email" required></label>
-    <label>Phone:<input type="tel" name="phone"></label>
-    <label>Service Needed:<select name="service" required>
-      <option value="">Select...</option>
-      <option>Deep Cleaning</option>
-      <option>Organization</option>
-      <option>Move-In/Out</option>
-      <option>Custom Consultation</option>
-    </select></label>
-    <label>Message:<textarea name="message" rows="4" required></textarea></label>
-    <button type="submit">Book Now</button>
-  </form>
-</section>
+  <section class="calendar">
+    <h2>Schedule Availability</h2>
+    <iframe src="https://calendar.google.com/calendar/embed?src=tidymamasolutionsllc%40gmail.com&ctz=America%2FNew_York"></iframe>
+  </section>
 
-<section class="calendar">
-  <h2>Check Our Availability</h2>
-  <iframe src="https://calendar.google.com/calendar/embed?src=tidymamasolutionsllc@gmail.com&ctz=America%2FNew_York"></iframe>
-</section>
-
-<footer>&copy; 2025 Tidy Mama Solutions – Bringing calm to chaos</footer>
-
+  <footer>
+    &copy; 2025 Tidy Mama Solutions • (386) 457-2188 • tidymamasolutionsllc@gmail.com
+  </footer>
 </body>
 </html>
+
