@@ -2,234 +2,90 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Tidy Mama Solutions | Where Chaos Meets Calm</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tidy Mama Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to bottom, #fffaf7, #f0f4ff);
-      color: #333;
-      line-height: 1.6;
-    }
-    a { color: #f06d61; text-decoration: none; }
-    header {
-      display: flex;
-      align-items: center;
-      padding: 2rem 1rem;
-      background: #ffffffcc;
-      backdrop-filter: blur(4px);
-      border-bottom: 4px solid #f06d61;
-    }
-    .logo {
-      width: 90px;
-      height: 90px;
-      border-radius: 50%;
-      object-fit: cover;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      margin-right: 1rem;
-    }
-    .header-title h1 {
-      font-size: 2.5rem;
-      color: #1a2f6f;
-      margin: 0;
-    }
-    .tagline {
-      font-style: italic;
-      color: #777;
-      font-size: 1.1rem;
-    }
-    .hero {
-      background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
-      padding: 5rem 2rem;
-      text-align: center;
-      color: white;
-      position: relative;
-    }
-    .hero::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: rgba(0,0,0,0.4);
-    }
-    .hero h2, .hero p {
-      position: relative;
-      z-index: 1;
-    }
-    .hero h2 {
-      font-size: 2.8rem;
-      margin-bottom: 1rem;
-    }
-    .hero p {
-      font-size: 1.2rem;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-    audio {
-      position: fixed;
-      bottom: 1rem;
-      right: 1rem;
-      z-index: 1000;
-      opacity: 0.8;
-    }
+    body { margin:0; font-family:'Poppins',sans-serif; background:#f0f4f8; color:#333; scroll-behavior:smooth; }
+    header{background:linear-gradient(90deg,#89f7fe,#66a6ff);padding:3rem 1rem;text-align:center;color:#fff;}
+    header .logo{width:140px;border-radius:50%;margin-bottom:1rem;border:3px solid #fff;}
+    h1{margin:0;font-size:2.8rem;} .tagline{font-style:italic;color:#eef;}
+    .promo{background:#ff9a9e;color:#fff;padding:1rem;border-radius:8px;text-align:center;font-weight:600;margin:2rem;}
+    section{max-width:1000px;margin:2rem auto;padding:2rem;background:#fff;border-radius:12px;box-shadow:0 6px 20px rgba(0,0,0,0.1);}
+    .services ul{display:grid;gap:1rem;list-style:none;padding:0;}
+    .services li::before{content:"✅ ";color:#66a6ff;}
+    .gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;}
+    .gallery img{width:100%;border-radius:8px;object-fit:cover;box-shadow:0 4px 10px rgba(0,0,0,0.1);}
+    .testimonial{font-style:italic;background:#ffecd2;border-left:4px solid #ff9a9e;padding:1rem;border-radius:8px;}
+    .form label{display:block;font-weight:600;margin:1rem 0 0.3rem;}
+    .form input,.form select,.form textarea{width:100%;padding:0.6rem;border:1px solid #ccc;border-radius:6px;}
+    .form button{background:#66a6ff;color:#fff;padding:0.8rem 1.5rem;font-size:1rem;border:none;border-radius:6px;cursor:pointer;}
+    .form button:hover{background:#558ecc;}
+    .calendar iframe{width:100%;height:600px;border:none;border-radius:8px;}
+    footer{background:#66a6ff;color:#fff;text-align:center;padding:1rem;margin-top:2rem;}
   </style>
 </head>
 <body>
 
- 
-  <header>
-  <img src="https://imgur.com/a/Ch8pV64" alt="https://imgur.com/a/Ch8pV64" />
-  <div class="header-text">
-    <h1>Tidy Mama Solutions</h1>
-    <p class="tagline">Where Chaos Meets Calm</p>
+<header>
+  <img src="assets/logo.png" alt="Tidy Mama Logo" class="logo">
+  <h1>Tidy Mama Solutions</h1>
+  <p class="tagline">Where Chaos Meets Calm</p>
+</header>
+
+<div class="promo">🎉 First-time clients get $20 OFF!</div>
+
+<section class="services">
+  <h2>Our Happy-Home Services</h2>
+  <ul>
+    <li>Deep Cleaning – one-time or recurring</li>
+    <li>Closet, Pantry & Kitchen Makeovers</li>
+    <li>Toy Room, Garage & Home Office Setup</li>
+    <li>Decluttering + Donation Drop-Off</li>
+    <li>Move-In/Out Clean & Reset</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Before & After: See the Difference</h2>
+  <div class="gallery">
+    <img src="turn0image0" alt="Before - cluttered room">
+    <img src="turn0image1" alt="After - organized room">
+    <img src="turn0image8" alt="Before - messy kitchen">
+    <img src="turn0image10" alt="After - clean, bright kitchen">
   </div>
-</header> 
+</section>
 
- <section class="hero">
-    <h2>Mom-Powered Cleaning & Organizing That Feels Like a Vacation</h2>
-    <p>Transform your space—and your peace of mind—with our tailored home and office services across Florida.</p>
-  </section>
+<section class="testimonial">
+  “Tidy Mama didn’t just organize my house—she restored my peace. My kids’ rooms have never looked better!”<br>
+  <cite>– Happy Mom</cite>
+</section>
 
-  <!-- Autoplay Background Music -->
-  <audio controls autoplay loop>
-    <source src="https://example.com/ambient-coastal.mp3" type="audio/mp3" />
-    Your browser does not support the audio element.
-  </audio>
-  <!-- Services Grid -->
-  <section class="section" style="background:#ffffffee; padding:4rem 1rem;">
-    <h2 style="text-align:center; font-size:2rem; color:#1a2f6f; margin-bottom:2rem;">Our Signature Services</h2>
-    <div style="display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));">
-      <div class="card">
-        <h3>Deep Cleaning</h3>
-        <ul>
-          <li>One-time or subscription</li>
-          <li>Kid-safe, beach-inspired products</li>
-          <li>Seasonal refresh packages</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Home Organization</h3>
-        <ul>
-          <li>Closet, pantry, playroom resets</li>
-          <li>Energy-based “Mom Mode” tiers</li>
-          <li>Custom storage systems</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>Decluttering Support</h3>
-        <ul>
-          <li>Donation pickups</li>
-          <li>Minimalist family coaching</li>
-          <li>Monthly “Declutter Club” option</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h3>After-Hours Office Cleaning</h3>
-        <ul>
-          <li>Discrete evening service</li>
-          <li>Custom consultation-based pricing</li>
-          <li>Paper-safe & scent-safe options</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+<section class="form">
+  <h2>Book Your Free Consultation</h2>
+  <form name="contact" method="POST" data-netlify="true">
+    <input type="hidden" name="form-name" value="contact">
+    <label>Full Name:<input type="text" name="name" required></label>
+    <label>Email:<input type="email" name="email" required></label>
+    <label>Phone:<input type="tel" name="phone"></label>
+    <label>Service Needed:<select name="service" required>
+      <option value="">Select...</option>
+      <option>Deep Cleaning</option>
+      <option>Organization</option>
+      <option>Move-In/Out</option>
+      <option>Custom Consultation</option>
+    </select></label>
+    <label>Message:<textarea name="message" rows="4" required></textarea></label>
+    <button type="submit">Book Now</button>
+  </form>
+</section>
 
-  <!-- Subscription Pricing -->
-  <section class="section" style="background: linear-gradient(to bottom, #e4f1ff, #f6f8ff); padding: 4rem 1rem;">
-    <h2 style="text-align:center; font-size:2rem; color:#1a2f6f; margin-bottom:2rem;">✨ Subscription Packages for Every Mom</h2>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
-      <div class="plan-card">
-        <h3>The Light Breeze</h3>
-        <p class="price">$99/mo</p>
-        <p>1 tidy + refresh per month</p>
-      </div>
-      <div class="plan-card" style="border: 3px solid #f06d61;">
-        <h3>Sunset Serenity</h3>
-        <p class="price">$189/mo</p>
-        <p>Bi-weekly clean + monthly organize</p>
-      </div>
-      <div class="plan-card">
-        <h3>Beach House Bliss</h3>
-        <p class="price">$349/mo</p>
-        <p>Weekly clean, monthly reset + VIP priority</p>
-      </div>
-    </div>
-  </section>
-  <!-- Before & After Gallery -->
-  <section class="section" style="padding:4rem 1rem; background:#fffaf7;">
-    <h2 style="text-align:center; font-size:2rem; color:#1a2f6f; margin-bottom:2rem;">Real Mom Wins 💪</h2>
-    <div class="gallery-grid">
-      <img src="https://via.placeholder.com/500x300?text=Before+Pantry" alt="Before Pantry" />
-      <img src="https://via.placeholder.com/500x300?text=After+Pantry" alt="After Pantry" />
-      <img src="https://via.placeholder.com/500x300?text=Before+Playroom" alt="Before Playroom" />
-      <img src="https://via.placeholder.com/500x300?text=After+Playroom" alt="After Playroom" />
-    </div>
-  </section>
+<section class="calendar">
+  <h2>Check Our Availability</h2>
+  <iframe src="https://calendar.google.com/calendar/embed?src=tidymamasolutionsllc@gmail.com&ctz=America%2FNew_York"></iframe>
+</section>
 
-  <!-- Testimonials -->
-  <section class="section" style="background:#f2faff; padding:3rem 1rem;">
-    <h2 style="text-align:center; color:#1a2f6f; margin-bottom:2rem;">What Moms Are Saying</h2>
-    <div class="testimonial">
-      “Not just organized—**recharged.** I finally feel like myself again in my own home.”
-      <cite>– Sarah B., mom of three</cite>
-    </div>
-    <br />
-    <div class="testimonial">
-      “Tidy Mama made my whole week better. The systems actually work. Game changer.”
-      <cite>– Alyssa C., remote worker & mom</cite>
-    </div>
-  </section>
-
-  <!-- Booking / Calendar -->
-  <section class="section" style="background:#ffffff; padding:3rem 1rem;">
-    <h2 style="text-align:center; color:#1a2f6f; margin-bottom:2rem;">📅 Book a Discovery Call</h2>
-    <p style="text-align:center; max-width:600px; margin:0 auto 2rem; color:#555;">
-      Ready to reclaim your calm? Choose a time that works best for you below:
-    </p>
-<!-- Google Calendar Embed -->
-<div style="text-align:center;">
-  <iframe 
-    src="https://calendar.google.com/calendar/embed?src=tidymamasolutionsllc%40gmail.com&ctz=America%2FNew_York" 
-    style="border: 1px solid #ccc; width: 100%; max-width: 800px; height: 600px;" 
-    frameborder="0" 
-    scrolling="no">
-  </iframe>
-</div>
-   </section>
-  <!-- Contact -->
-  <section class="section" style="background:#f7faff; padding:3rem 1rem;">
-    <h2 style="text-align:center; color:#1a2f6f; margin-bottom:2rem;">📞 Get In Touch</h2>
-    <form name="contact" method="POST" data-netlify="true" style="max-width:600px; margin:0 auto;">
-      <input type="hidden" name="form-name" value="contact" />
-      <label>Full Name</label>
-      <input type="text" name="name" required />
-
-      <label>Email</label>
-      <input type="email" name="email" required />
-
-      <label>Phone</label>
-      <input type="tel" name="phone" />
-
-      <label>What are you looking for?</label>
-      <select name="service">
-        <option value="home">Home Reset</option>
-        <option value="office">Office Cleaning</option>
-        <option value="subscription">Ongoing Support</option>
-      </select>
-
-      <label>Message</label>
-      <textarea name="message" rows="5"></textarea>
-
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Tidy Mama Solutions · All Rights Reserved</p>
-    <p>Serving Florida's east coast & beyond · <a href="mailto:tidymamasolutionsllc@gmail.com">Email Us</a></p>
-    <p>Follow on <a href="https://instagram.com/TidyMamaSolutions" target="_blank">Instagram @TidyMamaSolutions</a></p>
-  </footer>
+<footer>&copy; 2025 Tidy Mama Solutions – Bringing calm to chaos</footer>
 
 </body>
 </html>
